@@ -33,6 +33,8 @@ https://tesseract-ocr.github.io/
 
 comment : 확대 배율을 16 이하로만 설정하세요. 더 키울 경우 격자 표시 오류가 발생합니다.
 
+comment : 파일 경로에 한글 이름이 포함되어있다면 "스트림의 끝을 넘어 읽을 수 없습니다" 오류가 발생하므로 영어로 된 파일 경로를 설정해주세요.
+
 번역 오류가 있으면 이쪽으로 연락주세요. (Discord : Ggang#9630)
 
 ![QQ截图20211211112120](https://user-images.githubusercontent.com/20100838/145671934-b4d6f2e5-6e12-49d6-a793-984fbd16ad12.jpg)
