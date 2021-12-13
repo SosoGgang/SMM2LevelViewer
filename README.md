@@ -18,7 +18,7 @@ https://www.newtonsoft.com/json
 
 https://tesseract-ocr.github.io/
 
-수수깡의 코멘트 : 확대 배율을 16 이하로만 설정하세요. 더 키울 경우 격자 표시 오류가 발생합니다.
+
 
 사용 방법：
 
@@ -30,6 +30,10 @@ https://tesseract-ocr.github.io/
 
 4.메인 월드와 서브월드 버튼을 눌러서 맵을 확인합니다. 이미지 저장 버튼을 누르면 특정 위치에 이미지가 저장됩니다. 
 (comment : 만약 메인/서브 월드가 불러와지지 않는다면 다시 한번 불러오기 버튼을 누르세요.)
+
+comment : 확대 배율을 16 이하로만 설정하세요. 더 키울 경우 격자 표시 오류가 발생합니다.
+
+번역 오류가 있으면 이쪽으로 연락주세요. (Discord : Ggang#9630)
 
 ![QQ截图20211211112120](https://user-images.githubusercontent.com/20100838/145671934-b4d6f2e5-6e12-49d6-a793-984fbd16ad12.jpg)
 
