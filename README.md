@@ -1,8 +1,10 @@
 # SMM2LevelViewer Korean Localization
-슈퍼마리오메이커 2 레벨 뷰어 Korean Localization by Ggang!
+## 슈퍼마리오메이커 2 레벨 뷰어 Korean Localization
 
 이 repository는 JiXiaomai의 SMM2LevelViewer를 한글로 번역한 것입니다. Thanks to JiXiaomai
+
 번역자 : SosoGgang (Ggang!)
+
 (https://github.com/JiXiaomai/SMM2LevelViewer)
 
 API를 제공해준 TheGreatRambler에게 감사를 표합니다.
