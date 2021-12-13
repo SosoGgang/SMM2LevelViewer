@@ -60,52 +60,52 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(6, 20)
+        Me.Button1.Location = New System.Drawing.Point(7, 20)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(70, 21)
+        Me.Button1.Size = New System.Drawing.Size(82, 21)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "LOAD"
+        Me.Button1.Text = "불러오기"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(82, 19)
+        Me.TextBox1.Location = New System.Drawing.Point(96, 19)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(327, 21)
+        Me.TextBox1.Size = New System.Drawing.Size(381, 21)
         Me.TextBox1.TabIndex = 1
         Me.TextBox1.Text = "E:\VB\SMM2VIEWER\bin\Debug\MAP\Course_data_000"
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(6, 19)
+        Me.TextBox2.Location = New System.Drawing.Point(7, 19)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(173, 300)
+        Me.TextBox2.Size = New System.Drawing.Size(201, 300)
         Me.TextBox2.TabIndex = 2
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(185, 20)
+        Me.TextBox3.Location = New System.Drawing.Point(216, 20)
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(173, 300)
+        Me.TextBox3.Size = New System.Drawing.Size(201, 300)
         Me.TextBox3.TabIndex = 8
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(364, 20)
+        Me.TextBox4.Location = New System.Drawing.Point(425, 20)
         Me.TextBox4.Multiline = True
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(173, 300)
+        Me.TextBox4.Size = New System.Drawing.Size(201, 300)
         Me.TextBox4.TabIndex = 9
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(12, 39)
+        Me.Button2.Location = New System.Drawing.Point(14, 39)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(100, 21)
+        Me.Button2.Size = New System.Drawing.Size(117, 21)
         Me.Button2.TabIndex = 19
-        Me.Button2.Text = "Map A"
+        Me.Button2.Text = "메인 월드"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'GroupBox1
@@ -113,9 +113,9 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Controls.Add(Me.TextBox3)
         Me.GroupBox1.Controls.Add(Me.TextBox4)
-        Me.GroupBox1.Location = New System.Drawing.Point(522, 66)
+        Me.GroupBox1.Location = New System.Drawing.Point(609, 66)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(549, 327)
+        Me.GroupBox1.Size = New System.Drawing.Size(640, 327)
         Me.GroupBox1.TabIndex = 22
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
@@ -123,20 +123,20 @@ Partial Class Form1
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(260, 39)
+        Me.Button4.Location = New System.Drawing.Point(303, 39)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(181, 21)
+        Me.Button4.Size = New System.Drawing.Size(211, 21)
         Me.Button4.TabIndex = 23
-        Me.Button4.Text = "保存地图 Save image"
+        Me.Button4.Text = "이미지 저장"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'TextBox9
         '
         Me.TextBox9.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TextBox9.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TextBox9.Location = New System.Drawing.Point(12, 12)
+        Me.TextBox9.Location = New System.Drawing.Point(14, 12)
         Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(100, 21)
+        Me.TextBox9.Size = New System.Drawing.Size(116, 21)
         Me.TextBox9.TabIndex = 24
         Me.TextBox9.Text = "SQG-9NT-9GF"
         Me.TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -144,20 +144,20 @@ Partial Class Form1
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(118, 12)
+        Me.Button5.Location = New System.Drawing.Point(138, 12)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(136, 21)
+        Me.Button5.Size = New System.Drawing.Size(159, 21)
         Me.Button5.TabIndex = 25
-        Me.Button5.Text = "加载地图 Load Level"
+        Me.Button5.Text = "불러오기"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.TextBox1)
-        Me.GroupBox2.Location = New System.Drawing.Point(522, 8)
+        Me.GroupBox2.Location = New System.Drawing.Point(609, 8)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(497, 52)
+        Me.GroupBox2.Size = New System.Drawing.Size(580, 52)
         Me.GroupBox2.TabIndex = 27
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "test"
@@ -165,63 +165,63 @@ Partial Class Form1
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(118, 39)
+        Me.Button8.Location = New System.Drawing.Point(138, 39)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(100, 21)
+        Me.Button8.Size = New System.Drawing.Size(117, 21)
         Me.Button8.TabIndex = 36
-        Me.Button8.Text = "Map B"
+        Me.Button8.Text = "서브 월드"
         Me.Button8.UseVisualStyleBackColor = True
         '
         'TrackBar1
         '
-        Me.TrackBar1.Location = New System.Drawing.Point(260, 12)
+        Me.TrackBar1.Location = New System.Drawing.Point(303, 12)
         Me.TrackBar1.Maximum = 6
         Me.TrackBar1.Minimum = 2
         Me.TrackBar1.Name = "TrackBar1"
-        Me.TrackBar1.Size = New System.Drawing.Size(104, 45)
+        Me.TrackBar1.Size = New System.Drawing.Size(121, 45)
         Me.TrackBar1.TabIndex = 39
         Me.TrackBar1.Value = 4
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(370, 15)
+        Me.Label1.Location = New System.Drawing.Point(432, 15)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(71, 12)
+        Me.Label1.Size = New System.Drawing.Size(73, 12)
         Me.Label1.TabIndex = 40
-        Me.Label1.Text = "缩放Zoom:16"
+        Me.Label1.Text = "확대 비율:16"
         '
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 12
-        Me.ListBox1.Location = New System.Drawing.Point(12, 66)
+        Me.ListBox1.Location = New System.Drawing.Point(14, 66)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(100, 208)
+        Me.ListBox1.Size = New System.Drawing.Size(116, 208)
         Me.ListBox1.TabIndex = 42
         '
         'ListBox2
         '
         Me.ListBox2.FormattingEnabled = True
         Me.ListBox2.ItemHeight = 12
-        Me.ListBox2.Location = New System.Drawing.Point(118, 66)
+        Me.ListBox2.Location = New System.Drawing.Point(138, 66)
         Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(100, 208)
+        Me.ListBox2.Size = New System.Drawing.Size(116, 208)
         Me.ListBox2.TabIndex = 43
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(229, 66)
+        Me.Label2.Location = New System.Drawing.Point(267, 66)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(47, 12)
+        Me.Label2.Size = New System.Drawing.Size(57, 12)
         Me.Label2.TabIndex = 48
-        Me.Label2.Text = "LvlInfo"
+        Me.Label2.Text = "레벨 정보"
         '
         'PicBot
         '
         Me.PicBot.BackColor = System.Drawing.Color.LightGray
-        Me.PicBot.Location = New System.Drawing.Point(12, 448)
+        Me.PicBot.Location = New System.Drawing.Point(14, 448)
         Me.PicBot.Name = "PicBot"
         Me.PicBot.Size = New System.Drawing.Size(100, 100)
         Me.PicBot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -231,36 +231,36 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 681)
+        Me.Label3.Location = New System.Drawing.Point(14, 681)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(47, 12)
+        Me.Label3.Size = New System.Drawing.Size(57, 12)
         Me.Label3.TabIndex = 51
-        Me.Label3.Text = "LvlInfo"
+        Me.Label3.Text = "레벨 정보"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(146, 681)
+        Me.Label4.Location = New System.Drawing.Point(170, 681)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(47, 12)
+        Me.Label4.Size = New System.Drawing.Size(57, 12)
         Me.Label4.TabIndex = 52
-        Me.Label4.Text = "LvlInfo"
+        Me.Label4.Text = "레벨 정보"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(280, 681)
+        Me.Label5.Location = New System.Drawing.Point(327, 681)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(47, 12)
+        Me.Label5.Size = New System.Drawing.Size(57, 12)
         Me.Label5.TabIndex = 53
-        Me.Label5.Text = "LvlInfo"
+        Me.Label5.Text = "레벨 정보"
         '
         'PicM0
         '
         Me.PicM0.BackColor = System.Drawing.Color.Transparent
-        Me.PicM0.Location = New System.Drawing.Point(14, 550)
+        Me.PicM0.Location = New System.Drawing.Point(16, 550)
         Me.PicM0.Name = "PicM0"
-        Me.PicM0.Size = New System.Drawing.Size(128, 128)
+        Me.PicM0.Size = New System.Drawing.Size(149, 128)
         Me.PicM0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PicM0.TabIndex = 55
         Me.PicM0.TabStop = False
@@ -268,9 +268,9 @@ Partial Class Form1
         'PicM1
         '
         Me.PicM1.BackColor = System.Drawing.Color.Transparent
-        Me.PicM1.Location = New System.Drawing.Point(148, 550)
+        Me.PicM1.Location = New System.Drawing.Point(173, 550)
         Me.PicM1.Name = "PicM1"
-        Me.PicM1.Size = New System.Drawing.Size(128, 128)
+        Me.PicM1.Size = New System.Drawing.Size(149, 128)
         Me.PicM1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PicM1.TabIndex = 56
         Me.PicM1.TabStop = False
@@ -278,9 +278,9 @@ Partial Class Form1
         'PicM2
         '
         Me.PicM2.BackColor = System.Drawing.Color.Transparent
-        Me.PicM2.Location = New System.Drawing.Point(282, 550)
+        Me.PicM2.Location = New System.Drawing.Point(329, 550)
         Me.PicM2.Name = "PicM2"
-        Me.PicM2.Size = New System.Drawing.Size(128, 128)
+        Me.PicM2.Size = New System.Drawing.Size(149, 128)
         Me.PicM2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PicM2.TabIndex = 57
         Me.PicM2.TabStop = False
@@ -291,9 +291,9 @@ Partial Class Form1
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(453, 284)
+        Me.ClientSize = New System.Drawing.Size(783, 597)
         Me.Controls.Add(Me.PicM2)
         Me.Controls.Add(Me.PicM1)
         Me.Controls.Add(Me.PicM0)
@@ -316,7 +316,7 @@ Partial Class Form1
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "马里奥制造2关卡机器人 SMM2 Level Viewer v1.0"
+        Me.Text = "슈퍼마리오메이커2 레벨뷰어 v1.0"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)

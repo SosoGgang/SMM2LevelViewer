@@ -26,32 +26,32 @@ Public Class Form1
         LoadLvlData(TextBox1.Text, IO)
         If IO Then
             Label2.Text += vbCrLf & vbCrLf
-            Label2.Text += "图名：" & LH.Name & vbCrLf
-            Label2.Text += "描述：" & LH.Desc & vbCrLf
-            Label2.Text += "时间：" & LH.Timer & vbCrLf
-            Label2.Text += "风格：" & LH.GameStyle & vbCrLf
-            Label2.Text += "版本：" & LH.GameVer & vbCrLf
-            Label2.Text += "起点：" & LH.StartY & vbCrLf
-            Label2.Text += "终点：" & LH.GoalX & "," & LH.GoalY & vbCrLf
-            Label2.Text += "======表世界======" & vbCrLf
-            Label2.Text += "主题：" & MapHdr.Theme & vbCrLf
-            Label2.Text += "宽度：" & MapHdr.BorR & vbCrLf
-            Label2.Text += "高度：" & MapHdr.BorT & vbCrLf
-            Label2.Text += "砖块：" & MapHdr.GroundCount & vbCrLf
-            Label2.Text += "单位：" & MapHdr.ObjCount & vbCrLf
-            Label2.Text += "轨道：" & MapHdr.TrackCount & vbCrLf
-            Label2.Text += "卷轴：" & MapHdr.AutoscrollType & vbCrLf
-            Label2.Text += "水面：" & MapHdr.LiqSHeight & "-" & MapHdr.LiqEHeight & vbCrLf
+            Label2.Text += "이름：" & LH.Name & vbCrLf
+            Label2.Text += "설명：" & LH.Desc & vbCrLf
+            Label2.Text += "시간：" & LH.Timer & vbCrLf
+            Label2.Text += "게임 스타일：" & LH.GameStyle & vbCrLf
+            Label2.Text += "게임 버전：" & LH.GameVer & vbCrLf
+            Label2.Text += "시작 높이：" & LH.StartY & vbCrLf
+            Label2.Text += "골 거리：" & LH.GoalX & "," & LH.GoalY & vbCrLf
+            Label2.Text += "======메인 월드======" & vbCrLf
+            Label2.Text += "테마：" & MapHdr.Theme & vbCrLf
+            Label2.Text += "가로 길이：" & MapHdr.BorR & vbCrLf
+            Label2.Text += "세로 길이：" & MapHdr.BorT & vbCrLf
+            Label2.Text += "사용된 땅의 개수：" & MapHdr.GroundCount & vbCrLf
+            Label2.Text += "사용된 오브젝트 개수：" & MapHdr.ObjCount & vbCrLf
+            Label2.Text += "사용된 레일의 개수：" & MapHdr.TrackCount & vbCrLf
+            Label2.Text += "오토스크롤：" & MapHdr.AutoscrollType & vbCrLf
+            Label2.Text += "물의 높이 (최저 - 최고)：" & MapHdr.LiqSHeight & "-" & MapHdr.LiqEHeight & vbCrLf
         Else
-            Label2.Text += "======里世界======" & vbCrLf
-            Label2.Text += "主题：" & MapHdr.Theme & vbCrLf
-            Label2.Text += "宽度：" & MapHdr.BorR & vbCrLf
-            Label2.Text += "高度：" & MapHdr.BorT & vbCrLf
-            Label2.Text += "砖块：" & MapHdr.GroundCount & vbCrLf
-            Label2.Text += "单位：" & MapHdr.ObjCount & vbCrLf
-            Label2.Text += "轨道：" & MapHdr.TrackCount & vbCrLf
-            Label2.Text += "卷轴：" & MapHdr.AutoscrollType & vbCrLf
-            Label2.Text += "水面：" & MapHdr.LiqSHeight & "-" & MapHdr.LiqEHeight & vbCrLf
+            Label2.Text += "======서브 월드======" & vbCrLf
+            Label2.Text += "테마：" & MapHdr.Theme & vbCrLf
+            Label2.Text += "가로 길이：" & MapHdr.BorR & vbCrLf
+            Label2.Text += "세로 길이：" & MapHdr.BorT & vbCrLf
+            Label2.Text += "사용된 땅의 개수：" & MapHdr.GroundCount & vbCrLf
+            Label2.Text += "사용된 오브젝트 개수：" & MapHdr.ObjCount & vbCrLf
+            Label2.Text += "사용된 레일의 개수：" & MapHdr.TrackCount & vbCrLf
+            Label2.Text += "오토스크롤：" & MapHdr.AutoscrollType & vbCrLf
+            Label2.Text += "물의 높이(최저 - 최고)：" & MapHdr.LiqSHeight & "-" & MapHdr.LiqEHeight & vbCrLf
         End If
         Dim LInfo() As FieldInfo
         Dim I As FieldInfo
@@ -3097,7 +3097,7 @@ Err:
         On Error Resume Next
         Form2.P.Image.Save(PT & "\" & TextBox9.Text & "-0.PNG", Imaging.ImageFormat.Png)
         Form3.P.Image.Save(PT & "\" & TextBox9.Text & "-1.PNG", Imaging.ImageFormat.Png)
-        MsgBox("已保存地图至" & PT & "\" & TextBox9.Text)
+        MsgBox("아래 경로에 저장되었습니다," & PT & "\" & TextBox9.Text)
     End Sub
     Private Sub RefPic()
         Form2.P.Left = 0
@@ -3149,12 +3149,12 @@ Err:
         TextBox9.Text = Strings.Left(TextBox9.Text, 9)
         'Button2.Enabled = False
         'Button8.Enabled = False
-        Label2.Text = "马里奥制造2关卡机器人 v010"
-        Label2.Text += vbCrLf & DateTime.Now.ToString & " 加载地图(L00)"
+        Label2.Text = "슈퍼마리오메이커2 레벨뷰어 v010"
+        Label2.Text += vbCrLf & DateTime.Now.ToString & " 로딩중(L00)"
         If TextBox9.Text.Length = 9 Then
             If IO.File.Exists(PT & "\MAP\" & TextBox9.Text) Then
                 '存在解密文件
-                Label2.Text += vbCrLf & DateTime.Now.ToString & " 已加载地图(L01)"
+                Label2.Text += vbCrLf & DateTime.Now.ToString & " 불러온 맵(L01)"
                 TextBox1.Text = PT & "\MAP\" & TextBox9.Text
                 'Button2.Enabled = True
                 'Button8.Enabled = True
@@ -3164,10 +3164,10 @@ Err:
 
             ElseIf IO.File.Exists(PT & "\MAP\" & TextBox9.Text & ".DAT") Then
                 '存在地图文件
-                Label2.Text += vbCrLf & DateTime.Now.ToString & " 解析地图(L02)"
+                Label2.Text += vbCrLf & DateTime.Now.ToString & " 로딩중(L02)"
                 DeMap(TextBox9.Text & ".DAT", TextBox9.Text)
                 Threading.Thread.Sleep(3000)
-                Label2.Text += vbCrLf & DateTime.Now.ToString & " 已加载地图(L03)"
+                Label2.Text += vbCrLf & DateTime.Now.ToString & " 불러온 맵(L03)"
                 TextBox1.Text = PT & "\MAP\" & TextBox9.Text
                 'Button2.Enabled = True
                 'Button8.Enabled = True
@@ -3175,7 +3175,7 @@ Err:
                 RefPic()
 
             Else
-                Label2.Text += vbCrLf & DateTime.Now.ToString & " 从服务器加载地图(L04)"
+                Label2.Text += vbCrLf & DateTime.Now.ToString & " 서버에서 맵 불러오기(L04)"
                 Call URLDownloadToFile(0, UR2 & TextBox9.Text, PT & "\MAP\" & TextBox9.Text & ".DAT", 0, 0)
                 Do
                     If IO.File.Exists(PT & "\MAP\" & TextBox9.Text & ".DAT") Then
@@ -3183,13 +3183,13 @@ Err:
                         I = 0
                         Do
                             I += 1
-                            Label2.Text += vbCrLf & DateTime.Now.ToString & " 解析地图(L05)"
+                            Label2.Text += vbCrLf & DateTime.Now.ToString & " 로딩중(L05)"
                             Threading.Thread.Sleep(1000)
                             If IO.File.Exists(PT & "\MAP\" & TextBox9.Text) Then
                                 Exit Do
                             End If
                         Loop Until I > 10
-                        Label2.Text += vbCrLf & DateTime.Now.ToString & " 已加载地图(L06)"
+                        Label2.Text += vbCrLf & DateTime.Now.ToString & " 불러온 맵(L06)"
                         TextBox1.Text = PT & "\MAP\" & TextBox9.Text
                         isMapIO = True
                         RefPic()
@@ -3199,10 +3199,10 @@ Err:
                         Threading.Thread.Sleep(1000)
                     End If
                 Loop Until I > 5
-                Label2.Text += vbCrLf & DateTime.Now.ToString & " 加载地图超时(Error01)"
+                Label2.Text += vbCrLf & DateTime.Now.ToString & " 불러오기 실패(Error01)"
             End If
         Else
-            Label2.Text += vbCrLf & DateTime.Now.ToString & " 图号错误(Error02)"
+            Label2.Text += vbCrLf & DateTime.Now.ToString & " 그래프 오류(Error02)"
         End If
 
     End Sub
@@ -3231,14 +3231,14 @@ Err:
         Form3.Show()
     End Sub
     Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
-        Label1.Text = "缩放Zoom:" & 2 ^ TrackBar1.Value
+        Label1.Text = "확대 비율:" & 2 ^ TrackBar1.Value
     End Sub
     Private Sub Button9_Click(sender As Object, e As EventArgs) 
         FileCopy("D:\yuzu-windows-msvc-20200531-5ead55df7\user\save\0000000000000000\6D74F859658CF0E9DC9DD5D96A655C71\01009B90006DC000\course_data_000.BCD",
                  PT & "\MAP\Course_data_000.BCD")
         DeMap("course_data_000.BCD", "Course_data_000")
         Threading.Thread.Sleep(3000)
-        Me.Text = "已加载地图_11"
+        Me.Text = "불러온맵_11"
         TextBox1.Text = PT & "\MAP\Course_data_000"
         isMapIO = True
         RefPic()
@@ -3575,10 +3575,10 @@ Err:
         ms.Read(outBytes, 0, CInt(ms.Length))
         Return outBytes
     End Function
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) 
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs, PictureBox1 As Object)
         On Error Resume Next
         PictureBox1.Image.Save("E:\OBS录像\极难团\" & Strings.Left(TextBox9.Text, 9) & ".PNG")
-        Me.Text = "已保存"
+        Me.Text = "저장됨"
     End Sub
     Dim G0 As Graphics, B0 As New Bitmap（300, 30）
     Dim UR2 As String
@@ -3798,8 +3798,8 @@ Err:
             TextBox2.Text = S
             If S = "" Or InStr(S, "Code corresponds to a maker") > 0 Then Me.Text = "ID错误，请输入关卡ID" : Exit Sub
             JSON = JObject.Parse(S)
-            Label2.Text += "标题:" & JSON.SelectToken("name").ToString & vbCrLf
-            Label2.Text += "描述:" & JSON.SelectToken("description").ToString & vbCrLf
+            Label2.Text += "이름:" & JSON.SelectToken("name").ToString & vbCrLf
+            Label2.Text += "설명:" & JSON.SelectToken("description").ToString & vbCrLf
             Label2.Text += "上传日期:" & JSON.SelectToken("uploaded_pretty").ToString & vbCrLf
             Label2.Text += "风格:" & JSON.SelectToken("game_style_name").ToString & vbCrLf
             Label2.Text += "主题:" & JSON.SelectToken("theme_name").ToString & vbCrLf
@@ -3856,7 +3856,7 @@ Err:
     Private Sub Button11_Click(sender As Object, e As EventArgs) 
         LoadLvlInfo()
     End Sub
-    Function GetStrW(s As String) As Single
+    Function GetStrW(s As String, Button11 As Object) As Single
         Dim B As New Bitmap(300, 100)
         Dim G As Graphics = Graphics.FromImage(B), SZ As SizeF
         SZ = G.MeasureString(s, Button11.Font)

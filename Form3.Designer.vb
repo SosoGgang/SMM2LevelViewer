@@ -45,7 +45,7 @@ Partial Class Form3
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.Name = "Form3"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form3"
+        Me.Text = "서브 월드"
         CType(Me.P, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
