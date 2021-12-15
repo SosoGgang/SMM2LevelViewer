@@ -3,9 +3,10 @@
 
 이 repository는 JiXiaomai의 SMM2LevelViewer를 한글로 번역한 것입니다. Thanks to JiXiaomai
 
+(https://github.com/JiXiaomai/SMM2LevelViewer)
+
 번역자 : SosoGgang (Ggang!)
 
-(https://github.com/JiXiaomai/SMM2LevelViewer)
 
 API를 제공해준 TheGreatRambler에게 감사를 표합니다.
 
@@ -22,13 +23,15 @@ https://tesseract-ocr.github.io/
 
 사용 방법：
 
+0.압축 해제 후 bin\Debug\SMM2VIEWER.exe 파일을 실행합니다.
+
 1.좌측 위 파란색 텍스트박스에 맵 코드를 입력합니다.
 
-2.우측 불러오기를 눌러 맵을 로딩합니다.
+2.우측 불러오기 버튼을 눌러 맵을 로딩합니다.
 
 3.불러오는 과정을 기다립니다.
 
-4.메인 월드와 서브월드 버튼을 눌러서 맵을 확인합니다. 이미지 저장 버튼을 누르면 특정 위치에 이미지가 저장됩니다. 
+4.메인 월드와 서브월드 버튼을 눌러서 맵을 확인합니다. 이미지 저장 버튼을 누르면 특정 디렉토리에 이미지가 저장됩니다. 
 (comment : 만약 메인/서브 월드가 불러와지지 않는다면 다시 한번 불러오기 버튼을 누르세요.)
 
 comment : 확대 배율을 16 이하로만 설정하세요. 더 키울 경우 격자 표시 오류가 발생합니다.
