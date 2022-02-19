@@ -1,5 +1,4 @@
 # SMM2LevelViewer Korean Localization
-# 현재 tgrcode에서 제공되는 API의 스위치 기기가 밴을 당하여 레벨 뷰어 사용이 불가능합니다. (2022-02-06 기준)
 ## 슈퍼마리오메이커 2 레벨 뷰어 Korean Localization
 
 이 repository는 JiXiaomai의 SMM2LevelViewer를 한글로 번역한 것입니다. Thanks to JiXiaomai
